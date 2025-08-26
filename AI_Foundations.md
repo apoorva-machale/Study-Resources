@@ -31,38 +31,40 @@ Artificial Intelligence (AI) is the ability of machines to imitate human intelli
 **Definitions:**
 - **AI:** Broad field of making machines intelligent.
 - **ML:** Subset of AI where systems learn from data.
-- **DL:** Subset of ML using neural networks with multiple layers.
+- **DL:** Subset of ML using neural networks with multiple layers and predicts outcomes or generate new data.
 
 **ML Categories:**
-- **Supervised Learning:** Labeled data. Regression (continuous output), Classification (categorical output)
-- **Unsupervised Learning:** Unlabeled data. Clustering (group similar items), Dimensionality Reduction (find structure)
+- **Supervised Learning:** Labeled data. Regression (output label - continuous), Classification (output label - categorical)
+- **Unsupervised Learning:** Unlabeled data. Clustering (group similar items)
 - **Reinforcement Learning:** Trial-and-error learning with agent–environment–reward setup
 
 ---
 
 ## 🧠 Neural Networks (ANN)
 
-**Components:** Input, hidden, output layers; neurons; weights; bias; activation functions
+**Components:** Input, hidden, output layers; neurons(computational unit); weights(strength of connection between neurons); bias(additional input to neuron that allows certain degree of flexibility); activation functions(weighted sum of inputs to a neuron and produce output)
 
 **Training (Backpropagation):**
 1. Make a prediction
 2. Compare with target → compute error
-3. Adjust weights (gradient descent)
+3. Adjust weights
 4. Repeat over many examples
 
 **Advantages:** Feature extraction, parallel processing, scalability, better performance
 
 **Brief History:**
-- 1950s: Artificial neurons, perceptron, MLP
+- 1950s: Artificial neurons, perceptron, MLP(multi-layer perceptron)
 - 1990s: CNNs
 - 2010: GPUs speed training
 - 2012: AlexNet, DQN
-- 2016: GANs, Transformers
+- 2016: GANs(Generative Adversarial Networks), Transformers
 - Today: LLMs, Diffusion Models
 
 ---
 
 ## 🧩 RNNs, LSTMs, CNNs
+
+RNN - handles sequential data, maintains hidden state or memory, allow information to persist using feedback loop, capture dependencies
 
 **RNN Sequence Mapping Types:**
 
@@ -73,9 +75,13 @@ Artificial Intelligence (AI) is the ability of machines to imitate human intelli
 
 **CNN:** Input → Convolution + activation → Pooling → Fully connected → Output
 - Applications: Image classification, segmentation, face recognition, medical imaging, autonomous vehicles
-- Limitations: Overfitting, sensitivity, high computation, interpretability issues
+- Limitations: Overfitting(working with limited training data), sensitivity, high computation(requires massive data and calculations), interpretability issues(similar to black box model)
 
-**LSTM:** Selectively remembers or forgets information via gates; handles long-range dependencies and mitigates vanishing gradients
+**LSTM:** Selectively remembers or forgets information via gates; handles long-range dependencies and mitigates vanishing gradients problem. 
+
+**Working of LSTM:**
+
+Input processing(current data) → Previous Memory (previous hidden state values) → Gating Mechanism (core of lstm with input, forget and output gate) → Updating Memory (updates cell state by using info from input and forget gate) → Output Generation
 
 ---
 
@@ -85,6 +91,11 @@ Artificial Intelligence (AI) is the ability of machines to imitate human intelli
 - Difference from ML: ML predicts known outputs; GenAI generates new content
 - Types: Text-based, multimodal (text, images, audio, video)
 - Applications: Content generation, medical imaging, NLP, creative tasks
+
+**How GenAI different from other AI applications?:**
+
+1. Data with labels -> ML model -> output -> label (appns - classfication, regression, recommdention systems)
+2. Unstructerd data-> GenAI model -> output -> new content (appns -  text generations, image generations, videio generation)
 
 ---
 
