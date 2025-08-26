@@ -28,12 +28,6 @@ Artificial Intelligence (AI) is the ability of machines to imitate human intelli
 
 ## 🌐 AI vs ML vs DL
 
-The relationship is nested: **DL ⊂ ML ⊂ AI**. See the diagram below.
-
-| AI vs ML vs DL (Nested) | ML Types |
-|---|---|
-| ![AI vs ML vs DL](images/ai_ml_dl_nested.png) | ![ML Types](images/ml_types_corrected.png) |
-
 **Definitions:**
 - **AI:** Broad field of making machines intelligent.
 - **ML:** Subset of AI where systems learn from data.
@@ -44,15 +38,9 @@ The relationship is nested: **DL ⊂ ML ⊂ AI**. See the diagram below.
 - **Unsupervised Learning:** Unlabeled data. Clustering (group similar items), Dimensionality Reduction (find structure)
 - **Reinforcement Learning:** Trial-and-error learning with agent–environment–reward setup
 
-**Unsupervised Workflow:**
-
-![Unsupervised Workflow](images/unsupervised_workflow.png)
-
 ---
 
 ## 🧠 Neural Networks (ANN)
-
-![ANN Architecture](images/ann_architecture_deep.png)
 
 **Components:** Input, hidden, output layers; neurons; weights; bias; activation functions
 
@@ -76,12 +64,8 @@ The relationship is nested: **DL ⊂ ML ⊂ AI**. See the diagram below.
 
 ## 🧩 RNNs, LSTMs, CNNs
 
-| CNN Workflow | LSTM Workflow |
-|---|---|
-| ![CNN Workflow](images/cnn_workflow.png) | ![LSTM Workflow](images/lstm_workflow.png) |
-
 **RNN Sequence Mapping Types:**
-![RNN Mapping Types](images/rnn_mapping_types.png)
+
 - One-to-One: Single input → single output (e.g., image → label)
 - One-to-Many: Single input → sequence (e.g., image → caption)
 - Many-to-One: Sequence → single output (e.g., text → sentiment)
@@ -112,8 +96,6 @@ The relationship is nested: **DL ⊂ ML ⊂ AI**. See the diagram below.
 **Transformers:** Process tokens in parallel, model long-range dependencies via self-attention
 - Encoder builds contextual representations
 - Decoder generates outputs with cross-attention
-
-![Transformer Overview](images/transformer_overview.png)
 
 ---
 
